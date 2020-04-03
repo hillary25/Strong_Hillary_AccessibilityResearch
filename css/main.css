@@ -1,0 +1,120 @@
+.top-button {
+  z-index:5;
+  position:fixed;
+  right:50px;
+  bottom:40px; }
+
+.increase-button {
+  z-index:8;
+  position:fixed;
+  right:50px;
+  top:40px; }
+
+.decrease-button {
+  z-index:5;
+  position:fixed;
+  right:50px;
+  top:130px; }
+
+.hero {
+  background:rgb(200, 97, 116); }
+
+.nav-button {
+  background-color: #fff;
+  color: #171717;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px; }
+
+.nav-button:hover {
+  background-color: #e1e1e1;
+  color: #000000; }
+
+#video-section {
+  min-height:100vh;
+  position:relative;}
+
+.video-card {
+  padding: 3%;
+  margin-bottom: 60px; }
+
+.first-card {
+  padding:5%;
+  margin-bottom:0;
+  margin-top:0;
+  padding-top:10px!important; }
+
+#song-section {
+  position:relative; }
+
+.lyrics-style {
+  transition: visibility 0s, opacity 0.5s linear;
+  visibility: hidden;
+  opacity: 0; }
+
+.container1 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: 100px;
+  left: 50%; }
+  
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite; }
+  
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite; }
+  
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite; }
+  
+.chevron:before, .chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff; }
+  
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg); }
+  
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg); }
+  
+@keyframes move {
+  25% {
+    opacity: 1; }
+  33% {
+    opacity: 1;
+    transform: translateY(30px); }
+  67% {
+    opacity: 1;
+    transform: translateY(40px); }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5); }}
+  
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite; }
+  
+@keyframes pulse {
+  to {
+    opacity: 1; }}
