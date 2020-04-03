@@ -1,12 +1,411 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>A/V Accessibility Research Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+  </head>
+
+<!-- Back to top button -->
+  <div class="top-button">
+    <button id="up" class="button is-large" title="Click to go to top of page!">
+      <p>Back To Top</p>
+      <span class="icon is-small">
+        <i class="fas fa-arrow-up"></i>
+      </span>
+    </button>
+  </div>
+
+<!-- Make text larger button -->
+  <div class="increase-button">
+    <button id="increase" class="button is-large" title="Click to increase size of text!">
+      <p>Make text larger</p>
+      <span class="icon is-small">
+        <i class="fas fa-plus"></i>
+      </span>
+    </button>
+  </div>
+
+<!-- Make text smaller button -->
+  <div class="decrease-button">
+    <button id="decrease" class="button is-large" title="Click to decrease size of text!">
+      <p>Make text smaller</p>
+      <span class="icon is-small">
+        <i class="fas fa-minus"></i>
+      </span>
+    </button>
+  </div>
+
+  <!-- Pink header section -->
+  <body id="body">
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 id="1" class="has-text-light" style="font-size:2.5rem;font-weight:600;">
+            A/V Accessibility Research Project
+          </h1>
+          <h2 id="2" class="has-text-light" style="font-size:1.5rem;font-weight:400;padding-bottom: 20px;">
+            Media for Everyone
+          </h2>
+          <a href="#video-section" title="TV Show Trailer" class="nav-button">Watch a TV Show Trailer &nbsp;
+            <span class="icon is-small">
+            <i class="fas fa-tv"></i>
+          </span></a>
+          <a href="#video-section" title="Movie Trailer" class="nav-button">Watch a Movie Trailer &nbsp;
+            <span class="icon is-small">
+              <i class="fas fa-video"></i>
+            </span></a>
+          <a href="#song-section" title="Song" class="nav-button">Listen to a Song &nbsp;
+            <span class="icon is-small">
+            <i class="fas fa-music"></i>
+          </span></a>
+        </div>
+        <div class="container1">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <span class="text">Scroll down</span>
+        </div>
+      </div>
+    </section>
     
-</body>
+    <!-- Blue video section -->
+    <div id="video-section" class="has-background-info">
+      <div class="container1 has-text-dark">
+        <div class="chevron "></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="text">Scroll down</span>
+      </div>
+
+      <!-- Titles for video files -->
+      <section class="hero has-background-info">
+        <div class="hero-body">
+          <div class="container">
+            <h1 id="3" class="has-text-light has-text-centered has-text-weight-semibold" style="font-size:2.5rem;">
+              Video Files
+            </h1>
+            <br />
+            <h2 class="has-text-light columns" >
+              <div id="4" style="font-size:1.5rem;" class="has-text-centered column is-6">
+                Tv show on the left &nbsp;
+                <span class="icon is-small">
+                  <i class="fas fa-tv"></i>
+                </span>
+              </div>
+              <div id="5" style="font-size:1.5rem;" class="has-text-centered column is-6">
+                Movie on the right &nbsp;
+                <span class="icon is-small">
+                  <i class="fas fa-video"></i>
+                </span>
+              </div>
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Charlie's Angels video card -->
+      <div class="columns first-card">
+        <div class="column is-6 ">
+          <div class="card video-card">
+            <div class="card-image">
+              <video id="video1">
+                <source src="video/charliesangels.mp4" type="video/mp4"/>
+                <track label="English" kind="subtitles" srclang="en" src="vtt/charliesangels.vtt" default/>
+              </video>
+
+              <div class="card-content" style="padding-left:10px;">
+                <p class="title is-4">Charlie's Angels</p>
+                <p class="subtitle is-6">Video 1</p>
+              </div>
+              
+              <progress style="margin-bottom:3px;" class="progress is-link is-small progress1" value="0" max="100">30%</progress>
+              <div class="has-text-centered has-text-grey-light time">
+                00:00
+              </div>
+              <br/>
+            </div>
+            
+            <!-- TV show control panel -->
+            <footer class="card-footer">
+              <a class="card-footer-item play">
+                <button class="button is-small" title="Play Button">
+                  <span class="icon is-small">
+                    <i class="fas fa-play"></i>
+                  </span>
+                </button>
+              </a>
+
+              <a class="card-footer-item pause">
+                <button class="button is-small">
+                  <span class="icon is-small" title="Pause Button">
+                    <i class="fas fa-pause"></i>
+                  </span>
+                </button>
+              </a>
+
+              <a class="card-footer-item stop1">
+                <button class="button is-small">
+                  <span class="icon is-small" title="Stop Button">
+                    <i class="fas fa-stop"></i>
+                  </span>
+                </button>
+              </a>
+
+              <a class="card-footer-item rewind">
+                <button class="button is-small">
+                  <span class="icon is-small" title="Back Button">
+                    <i class="fas fa-backward"></i>
+                  </span>
+                </button>
+              </a>
+
+              <a class="card-footer-item forward">
+                <button class="button is-small">
+                  <span class="icon is-small" title="Forward Button">
+                    <i class="fas fa-forward"></i>
+                  </span>
+                </button>
+              </a>
+
+              <a class="card-footer-item sub1">
+                <button class="button is-small">
+                  <span class="icon is-small" title="Closed Captions Button">
+                    <i class="fas fa-closed-captioning"></i>
+                  </span>
+                </button>
+              </a>
+
+            </footer>
+          </div>
+        </div>
+
+        <!-- The Princess Bride video card -->
+        <div class="column is-6">
+          <div class="card video-card">
+            <div class="card-image">
+              <video id="video2">
+                <source src="video/theprincessbride.mp4" type="video/mp4"/>
+                <track label="English" kind="subtitles" srclang="en" src="vtt/theprincessbride.vtt" default />
+              </video>
+
+              <div class="card-content" style="padding-left:10px;">
+                <p class="title is-4">The Princess Bride</p>
+                <p class="subtitle is-6">Video 2</p>
+              </div>
+              <progress style="margin-bottom:3px;" class="progress is-link is-small progress2" value="0" max="100">30%</progress>
+              <div class="has-text-centered has-text-grey-light time1">
+                00:00
+              </div>
+              <br/>
+            </div>
+            
+            <!-- Movie control panel -->
+            <footer class="card-footer">
+              <a class="card-footer-item play1">
+                <button class="button is-small">
+                  <span class="icon is-small" title="Play Button">
+                    <i class="fas fa-play"></i>
+                  </span>
+                </button>
+              </a>
+
+              <a class="card-footer-item pause1">
+                <button class="button is-small">
+                  <span class="icon is-small" title="Pause Button">
+                    <i class="fas fa-pause"></i>
+                  </span>
+                </button>
+              </a>
+
+              <a class="card-footer-item stop2">
+                <button class="button is-small">
+                  <span class="icon is-small" title="Stop Button">
+                    <i class="fas fa-stop"></i>
+                  </span>
+                </button>
+              </a>
+
+              <a class="card-footer-item rewind1">
+                <button class="button is-small">
+                  <span class="icon is-small" title="Back Button">
+                    <i class="fas fa-backward"></i>
+                  </span>
+                </button>
+              </a>
+
+              <a class="card-footer-item forward1">
+                <button class="button is-small">
+                  <span class="icon is-small" title="Forward Button">
+                    <i class="fas fa-forward"></i>
+                  </span>
+                </button>
+              </a>
+
+              <a class="card-footer-item sub2">
+                <button class="button is-small">
+                  <span class="icon is-small" title="Closed Captions Button">
+                    <i class="fas fa-closed-captioning"></i>
+                  </span>
+                </button>
+              </a>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Song section -->
+    <div id="song-section" class="has-background-primary">
+      <section class="hero has-background-primary">
+        <div class="hero-body">
+          <div class="container">
+            <h1 id="6" class="title has-text-light has-text-centered" style="font-size:2.4rem;">
+              Audio File &nbsp;
+              <span class="icon is-small">
+                <i class="fas fa-music"></i>
+              </span></a>
+            </h1>
+            <br/>
+            <h2 class="subtitle has-text-light is-size-4 columns"></h2>
+          </div>
+        </div>
+     </section>
+
+      <div class="columns is-multiline" style="padding:5%;margin-bottom:0;margin-top:0;padding-top:10px!important;">
+        <div class="column is-12 has-text-centered">
+          <div class="card video-card">
+            <p>U Can't Touch This - MC Hammer</p>
+            <div class="card-content">
+              <div class="content">
+                <audio controls class="has-background-light">
+                  <source src="audio/mchammer.mp3" type="audio/mp3"/>
+                </audio>
+                <br/>
+                <br/>
+                <button id="lyricsbut" class="button is-warning" title="Click button for lyrics">
+                  View Audio Transcript
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Song lyrics transcript -->
+        <div id="lyrics" class="column is-12 has-text-centered lyrics-style">
+          <div class="card video-card">
+            <div class="card-content">
+              <div class="content">
+                <h3>U Can’t Touch This</h3>
+                <h4>By: MC Hammer</h4>
+
+                <p>
+                  You can't touch this
+                  <br />
+                  You can't touch this <br />
+                  You can't touch this (oh-oh oh oh oh-oh-oh) <br />
+                  You can't touch this (oh-oh oh oh oh-oh-oh) <br />
+                  My-my-my-my music makes me so hard makes me say oh my Lord
+                  <br />
+                  Thank you for blessing me with a mind to rhyme and two hype
+                  feet <br />
+                  That's good when you know you're down <br />
+                  A super dope homeboy from the Oaktown <br />
+                  And I'm known as such <br />
+                  And this is a beat uh u can't touch <br />
+                  I told you homeboy u can't touch this <br />
+                  Yeah that's how we're livin' and you know u can't touch this
+                  <br />
+                  Look in my eyes man u can't touch this <br />
+                  You know let me bust the funky lyrics u can't touch this
+                  <br />
+                  Fresh new kicks and pants <br />
+                  You got it like that now you know you wanna dance <br />
+                  So move out of your seat <br />
+                  And get a fly girl and catch this beat <br />
+                  While it's rollin' hold on pump a little bit <br />
+                  And let me know it's going on like that like that <br />
+                  Cold on a mission so pull on back <br />
+                  Let 'em know that you're too much <br />
+                  And this is a beat uh u can't touch <br />
+                  Yo I told you u can't touch this <br />
+                  Why you standing there man u can't touch this <br />
+                  Yo sound the bells school is in sucker u can't touch this
+                  <br />
+                  Give me a song or rhythm <br />
+                  Making 'em sweat that's what I'm giving 'em <br />
+                  Now they know when you talk about the Hammer <br />
+                  You talk about a show that's hyped and tight <br />
+                  Singers are sweatin' so pass them a mic <br />
+                  Or a tape to learn what it's gonna take <br />
+                  And now he's gonna burn <br />
+                  The charts legit either work hard <br />
+                  Or you might as well quit <br />
+                  That's word because you know <br />
+                  You can't touch this (oh-oh oh oh-oh-oh) <br />
+                  You can't touch this (oh-oh oh oh-oh-oh) <br />
+                  Break it down <br />
+                  (Oh-oh-oh-oh-oh-oh-oh-oh-oh oh-oh) <br />
+                  (Oh-oh-oh-oh-oh-oh-oh-oh-oh oh-oh) <br />
+                  Stop Hammer time <br />
+                  Go with the flow in a spin if you can't move to this <br />
+                  Then you probably are dead <br />
+                  So wave your hands in the air <br />
+                  Bust through the moves run your fingers through your hair
+                  <br />
+                  This is it for a winner <br />
+                  Dance to this and you're gonna get thinner <br />
+                  Move slide your rump <br />
+                  Just for a minute let's all do the bump <br />
+                  Bump bump bump yeah <br />
+                  Can't touch this Look man u can't touch this <br />
+                  You'll probably get hyped boy 'cause you know you can't u
+                  can't touch this <br />
+                  Ring the bell school's back in break it down <br />
+                  (Oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh) <br />
+                  (Oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh) <br />
+                  Stop Hammer time <br />
+                  (Oh-oh oh oh oh-oh-oh) <br />
+                  (Oh-oh oh oh oh-oh-oh) <br />
+                  (Oh-oh oh-oh oh-oh oh-oh) <br />
+                  (Oh-oh oh oh oh-oh-oh) u can't touch this <br />
+                  (Oh-oh oh oh oh-oh-oh) u can't touch this <br />
+                  (Oh-oh oh oh oh-oh-oh) u can't touch this <br />
+                  (Oh-oh oh oh oh-oh-oh) break it down <br />
+                  (Oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh) <br />
+                  (Oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh) <br />
+                  Stop Hammer time <br />
+                  Every time you see me that Hammer's just so hype <br />
+                  I'm dope on the floor and I'm magic on the mic <br />
+                  Now why would I ever stop doing this <br />
+                  With others makin' records that just don't hit <br />
+                  I toured around the world from London to the bank <br />
+                  It's Hammer go Hammer <br />
+                  It's a Hammer yo Hammer and the rest go and play <br />
+                  You can't touch this (oh-oh oh oh-oh-oh) <br />
+                  You can't touch this (oh-oh oh oh-oh-oh) <br />
+                  Can't touch this (oh-oh oh-oh-oh) <br />
+                  Yeah u can't touch this <br />
+                  I told you u can't touch this (oh-oh oh-oh-oh) <br />
+                  Too hype can't touch this <br />
+                  Get me outta here u can't touch this <br />
+                  (Oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh) <br />
+                  <br />
+                </p>
+                <h4 class="has-text-centered is-size-4 has-text-grey-light">
+                  Source: LyricFind Songwriters: Alonzo Miller / MC Hammer /
+                  Rick James U Can’t Touch This lyrics © Sony/ATV Music
+                  Publishing LLC, BMG Rights Management
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
 </html>
