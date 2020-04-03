@@ -15,7 +15,7 @@ This is a school assignment for Fanshawe College's multimedia authoring class. W
 [Hillary Strong](hillary-strong.com) - (https://github.com/hillary25)
 
 ## Acknowledgements
-* Fonts (https://fontawesome.com/)
+* Icons (https://fontawesome.com/)
 * Trevor Van Rys (Authoring Professor)
 
 ## License
