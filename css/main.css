@@ -118,3 +118,11 @@
 @keyframes pulse {
   to {
     opacity: 1; }}
+
+.made-by {
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
